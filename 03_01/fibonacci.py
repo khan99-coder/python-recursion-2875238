@@ -12,7 +12,12 @@ def fibonacci_iterative(n):
 
 
 def fibonacci_recursive(n):
-    pass
+    # Base case
+    if n < 2:
+        return n
+    else:
+        # Recursive case
+        return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
 
 
 print(fibonacci_iterative(6))
