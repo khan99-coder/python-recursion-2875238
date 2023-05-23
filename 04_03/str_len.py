@@ -5,11 +5,18 @@ Robin Andrews - https://compucademy.net/
 
 
 def iterative_str_len(a_str):
-    pass
+    count = 0
+    for char in a_str:
+        count += 1
+    return count
 
 
 def recursive_str_len(a_str):
-    pass
+    # Base case
+    if a_str == '':
+        return 0
+    # Recursive case
+    return 1 + recursive_str_len(a_str[1:])
 
 
 input_str = "I love recursion"
